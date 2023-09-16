@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="h1">heading 1</h1>
+    <h1>heading 2</h1>
+    <h2 class="h1" id="heading-3">heading 3</h2>
+    <button id="cta">click</button>
+    <script>
+        const btn = document.getElementById("cta");
+        const h2=document.getElementById("heading-3")
+
+    //   console.log(document.getElementById("cta").innerText);
+    //   console.log(document.getElementsByTagName("h1"));
+    //   console.log(document.getElementsByTagName("h1")[1].innerText);
+    //   console.log(document.getElementsByClassName("h1"));
+    //   console.log(document.querySelectorAll("h1.h1"));
+
+      btn.style.backgroundColor = "green";
+      h2.setAttribute("class","h2")
+      h2.classList.add("h3")
+
+      const strong=document.createElement("strong")
+      strong.innerText="KMS"
+
+      h2.appendChild(strong)
+
+      document.removeChild(btn)
+      
+    </script>
+  </body>
+</html>

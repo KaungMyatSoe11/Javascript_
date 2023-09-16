@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="result"></p>
+
+    <script>
+      const num1 = parseInt(prompt("Enter First Number :")); //parseInt(),prompt()
+      const num2 = parseInt(prompt("Enter Second Number :"));
+
+      const total = num1 + num2;
+
+      document.getElementById("result").innerText =`${num1} + ${num2} = ${total}`
+    </script>
+  </body>
+</html>

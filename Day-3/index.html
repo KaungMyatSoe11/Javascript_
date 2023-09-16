@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btnClick">Click Me</button>
+    <p id="just-p"></p>
+
+    <script>
+      console.log("this is internal Js");
+      // const name=prompt("Please Type Your Name :")
+      // console.log(`Your name is ${name}`);
+      const isLeave = confirm("Are you sure you want to delete item?");
+      console.log(isLeave);
+      alert("this alert")
+
+      document.getElementById("btnClick").innerText="Hey! Click Me"
+      document.getElementById("just-p").innerText=`My name's <strong>KMS</strong>`
+    </script>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .convertor-wrap {
+        display: flex;
+        gap: 24px;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+      }
+
+      .inp-wrap {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        align-items: center;
+      }
+
+      .select-wrap {
+        width: 60%;
+
+      }
+
+      .select-wrap select{
+        width: 100%;
+        padding: .5rem;
+        outline: none;
+        border: 0.1px solid #c7c7c796;
+      }
+
+      #inp-cel,
+      #inp-fah {
+        padding: 0.5rem;
+        width: 300px;
+        outline: none;
+        border: 0.1px solid #c7c7c796;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form class="convertor-wrap">
+        <div class="select-wrap">
+          <select name="convertor-type" id="convertor-type">
+            <option value="1">Celsius To Fahrenheit</option>
+            <option value="2">CM To M</option>
+          </select>
+        </div>
+        <div class="inp-wrap">
+          <input
+            type="number"
+            placeholder="Celsius"
+            name="inp-cel"
+            id="inp-cel"
+          />
+          <div>
+            &rightarrow;
+          </div>
+          <input
+            type="number"
+            placeholder="Fahrenheit"
+            name="inp-fah"
+            id="inp-fah"
+          />
+        </div>
+      </form>
+    </div>
+
+ <script type="module" src="./index.js"></script>
+  </body>
+</html>

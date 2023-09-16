@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .error-msg {
+        margin: 0;
+        color: red;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="frm">
+      <div>
+        <input
+          type="text"
+          name="task"
+          id="task"
+          style="transition: all 0.2s ease;outline: none;"
+          onchange="console.log('you changed valud');"
+        />
+        <span id="error-message" class="error-msg">error msg</span>
+      </div>
+      <button id="btn-add">Add</button>
+    </form>
+    <button id="btn-delete-all">Delete All</button>
+
+    <ul id="task-list"></ul>
+
+    <script src="./todo.js"></script>
+  </body>
+</html>
